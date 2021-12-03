@@ -1,0 +1,92 @@
+/*
+Colors used:
+Primary Color (Blue): rgba 0,93,172,1;
+(Off Black): rgba 0,0,0,0.9;
+*/
+body {
+  background-color: rgba(255,255,255,1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(0,0,0,0.9)
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: rgba(0,93,172,1);
+  text-decoration: none; /* No underlining */
+}
+
+a:visited {
+  color: rgba(0,93,172,1);
+}
+
+a:hover,
+a:focus {
+  color: rgba(0,93,172,0.8);
+  text-decoration: underline; /* Underlinging when hovering over a link */
+}
+
+a:active {
+  color: rgba(0,93,172,1);
+}
+
+.button {
+  display: inline-block;
+  background-color: rgba(0,93,172,1);
+  color: rgba(255,255,255,1);
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0.9);
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 1;
+  text decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: rgba(0,93,172,1);
+  text-transform: uppercase;
+  border: 2px solid rgba(0,93,172,1);
+}
+
+.button.contact:hover {
+  background-color: rgba(0,93,172,1);
+  color: rgba(255,255,255,1);
+}
