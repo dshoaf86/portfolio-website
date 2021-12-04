@@ -69,6 +69,10 @@ a:active {
   transition: 0.2s opacity;
 }
 
+.button:visited {
+  color: rgba(255,255,255,1);
+}
+
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
