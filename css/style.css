@@ -3,25 +3,30 @@ Colors used:
 Primary Color (Blue): rgba 0,93,172,1;
 (Off Black): rgba 0,0,0,0.9;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  color: rgba(0,0,0,0.9)
+  color: rgba(0, 0, 0, 0.9)
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 1.75em;
+  font-size: 1.9em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
@@ -40,37 +45,39 @@ img {
 }
 
 a {
-  color: rgba(0,93,172,1);
-  text-decoration: none; /* No underlining */
+  color: rgba(0, 93, 172, 1);
+  text-decoration: none;
+  /* No underlining */
 }
 
 a:visited {
-  color: rgba(0,93,172,1);
+  color: rgba(0, 93, 172, 1);
 }
 
 a:hover,
 a:focus {
-  color: rgba(0,93,172,0.8);
-  text-decoration: underline; /* Underlinging when hovering over a link */
+  color: rgba(0, 93, 172, 0.8);
+  text-decoration: underline;
+  /* Underlinging when hovering over a link */
 }
 
 a:active {
-  color: rgba(0,93,172,1);
+  color: rgba(0, 93, 172, 1);
 }
 
 .button {
   display: inline-block;
-  background-color: rgba(0,93,172,1);
-  color: rgba(255,255,255,1);
+  background-color: rgba(0, 93, 172, 1);
+  color: rgba(255, 255, 255, 1);
   font-weight: 700;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0,0,0,0.9);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.9);
   transition: 0.2s opacity;
 }
 
 .button:visited {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .button:hover {
@@ -80,17 +87,117 @@ a:active {
 
 .button:active {
   opacity: 1;
-  text decoration: none;
+  text-decoration: none;
 }
 
 .button.contact {
   background-color: transparent;
-  color: rgba(0,93,172,1);
+  color: rgba(0, 93, 172, 1);
   text-transform: uppercase;
-  border: 2px solid rgba(0,93,172,1);
+  border: 2px solid rgba(0, 93, 172, 1);
 }
 
 .button.contact:hover {
-  background-color: rgba(0,93,172,1);
-  color: rgba(255,255,255,1);
+  background-color: rgba(0, 93, 172, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px 0;
+  box-shadow:         0px 3px 13px 0px rgba(50, 50, 50, 0.3);
+  position: relative;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+nav>ul>li>a:visited {
+  color: rgba(0,0,0,0.9);
+}
+
+nav>ul>li>a:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+nav>ul>li>a:active {
+  color: rgba(0,93,172,1);
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: rgba(0,0,0,0.1);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+div>ul {
+  list-style-type: none;
+  padding: 0;
+}
+ div>ul>li {
+   display: inline-block;
+ }
+
+div>ul>li>a>svg {
+  padding: 0 15px;
+  width: 100px;
+}
+
+#contact {
+  text-align: center;
+}
+
+#project {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+div>div>div>h3 {
+  text-align: center;
 }
