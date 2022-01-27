@@ -12,12 +12,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/676310bd7d.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="home-page">
 
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html" target="_blank">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 50" style="enable-background:new 0 0 150 50;" xml:space="preserve" class="logo">
           <g>
@@ -54,9 +56,11 @@
         <ul class="navigation">
           <li><a class="menu-link" href="index.html">Work</a></li>
           <li><a class="menu-link" href="about.html">About</a></li>
-          <li><a class="menu-link" href="#contact">Contact</a></li>
+          <li><a class="menu-link" href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
